@@ -48,7 +48,7 @@ function App() {
     setList(newList);
   }
 
-  return (
+    return (
     <Stack gap={3} className="container mt-3 text-center">
       <h1>Finanças</h1>
       <Card className="row justify-content-md-center">

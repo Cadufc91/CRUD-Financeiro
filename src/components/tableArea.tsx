@@ -3,6 +3,7 @@ import { TableItem } from '../components/tableItem';
 import Stack from 'react-bootstrap/Stack';
 import Table from 'react-bootstrap/Table';
 
+
 type Props = {
     list: Item[]
 }
@@ -17,6 +18,7 @@ export const TableArea = ({ list } : Props) => {
                         <th>Categoria</th>
                         <th>Título</th>
                         <th>Valor</th>
+                        <th>Modificar</th>
                     </tr>
                 </thead>
                 <tbody>
