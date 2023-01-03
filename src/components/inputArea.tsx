@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Item } from '../types/item';
-
 import { categories } from '../data/categories';
 import { newDateAdjusted } from '../helpers/dateFilter';
+import Stack from 'react-bootstrap/Stack';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 type Props = {
   onAdd: (item: Item) => void;
@@ -53,34 +55,34 @@ export const InputArea = ({ onAdd }: Props) => {
   }
 
   return (
-      <div>
-        <div className='input-label'>
-          <div className='input-title'>Data</div>
-          <input type="date" value={dateField} onChange={e => setDateField(e.target.value)} />
-        </div>
-        <div className='input-label'>
-          <div className='input-title'>Categoria</div>
-          {/* <button value={categoryField} onChange={e => setCategoryField(e.target.value)}>
+      <Stack className='d-flex flex-row justify-content-center align-items-center p-2 '>
+        <Form.Group className='d-flex flex-column align-items-start m-3'>
+          <Form.Label className='fw-bold'>Data</Form.Label>
+          <Form.Control type="date" value={dateField} onChange={e => setDateField(e.target.value)} />
+        </Form.Group>
+        <Form.Group className='d-flex flex-column align-items-start  m-3'>
+          <Form.Label className='fw-bold'>Categoria</Form.Label>
+          <Form.Select value={categoryField} onChange={e => setCategoryField(e.target.value)}>
             <>
               <option></option>
               {categoryKeys.map((key, index) => (
                 <option key={index} value={key}>{categories[key].title}</option>
               ))}
             </>
-          </button> */}
-        </div>
-        <div className='input-label'>
-          <div className='input-title'>Título</div>
-          <input type="text" value={titleField} onChange={e => setTitleField(e.target.value)} />
-        </div>
-        <div className='input-label'>
-          <div className='input-title'>Valor</div>
-          <input type="number" value={valueField} onChange={e => setValueField(parseFloat(e.target.value))} />
-        </div>
-        <div className='input-label'>
-          <div className='input-title'>&nbsp;</div>
-          <button onClick={handleAddEvent}>Adicionar</button>
-        </div>
-      </div>
+          </Form.Select>
+        </Form.Group>
+        <Form.Group className='d-flex flex-column align-items-start  m-3'>
+          <Form.Label className='fw-bold'>Título</Form.Label>
+          <Form.Control type="text" value={titleField} onChange={e => setTitleField(e.target.value)} />
+        </Form.Group>
+        <Form.Group className='d-flex flex-column align-items-start  m-3'>
+          <Form.Label className='fw-bold'>Valor</Form.Label>
+          <Form.Control type="number" value={valueField} onChange={e => setValueField(parseFloat(e.target.value))} />
+        </Form.Group>
+        <Form.Group className='mt-4'>
+          <Form.Label>&nbsp;</Form.Label>
+          <Button onClick={handleAddEvent}>Adicionar</Button>
+        </Form.Group>
+      </Stack>
   );
 }

@@ -9,7 +9,6 @@ import { InputArea } from '../src/components/inputArea';
 import { InfoArea } from './components/infoArea';
 import Stack from 'react-bootstrap/Stack';
 import Card from 'react-bootstrap/Card';
-import { Navbar } from 'react-bootstrap';
 
 function App() {
   const [list, setList] = useState(items);
