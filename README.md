@@ -1,46 +1,134 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/cadufc91/crud-financeiro?color=%2304D361">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/cadufc91/crud-financeiro">
+  
+  <a href="https://github.com/cadufc91/controle-financeiro/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cadufc91/crud-financeiro">
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   <a href="https://github.com/cadufc91/crud-financeiro/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/cadufc91/crud-financeiro?style=social">
+  </a>  
+ 
+</p>
+<h1 align="center">
+    <img alt="CRUD Financeiro" title="#CRUDFinanceiro" src="./src/thumb.png" />
+</h1>
 
-## Available Scripts
+<h4 align="center"> 
+	🚧  Crud Financeiro ♻️ <a href="https://crud-financeiro.vercel.app/">Concluído</a> 🚀 🚧
+</h4>
 
-In the project directory, you can run:
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#-como-executar-o-projeto">Como executar</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-contribuidores">Contribuidores</a> • 
+ <a href="#-autor">Autor</a> • 
+ <a href="#-licença">Licença</a>
+</p>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Sobre o projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Crud Financeiro é um projeto desenvolvido para o controle mensal das suas despesas e receitas, seja para pessoas jurídica ou pessoa física.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Funcionalidades
 
-### `npm run build`
+- [x] Empresas ou indivíduos podem inserir suas receitas e despesas mensais:
+  - Salário
+  - Aluguel de Escritório
+  - Papelaria 
+  - Luz
+- [x] Os usuários tem acesso a uma listagem com todos os dados inseridos
+- [x] No topo é apresentado um resumo com o total de receitas e despesas daquele mês e um saldo 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Como executar o projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este projeto foi desenvolvido somente o Front End.
 
-### `npm run eject`
+### Pré-requisitos
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 🧭 Rodando a aplicação web (Frontend)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# Clone este repositório
+$ git clone https://github.com/Cadufc91/crud-financeiro.git
+# Vá para a pasta da aplicação Front End
+$ cd crud-financeiro
+# Instale as dependências
+$ npm install
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 🛠 Tecnologias
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+As seguintes ferramentas foram usadas na construção do projeto:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
+
+-   **[Bootstrap 5](https://react-bootstrap.github.io/)**
+
+> Veja o arquivo  [package.json](https://github.com/cadufc91/crud-financeiro/blob/master/web/package.json)
+
+**Utilitários**
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)** 
+-   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Markdown Emoji](https://gist.github.com/rxaviers/7360908)**
+
+
+---
+
+## 👨‍💻 Contribuidores
+
+<table>
+  <tr>
+    <td align="center"><a href="https://cadufc-portfolio.vercel.app/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/92037562?v=4" width="100px;" alt=""/><br /><sub><b>Cadu Fernandes</b></sub></a><br /><a href="https://cadufc-portfolio.vercel.app/">👨‍💻</a></td>
+  </tr>
+</table>
+
+## 💪 Como contribuir para o projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+
+## 🦸 Autor
+
+<a href="https://cadufc-portfolio.vercel.app/">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/92037562?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Cadu Fernandes</b></sub></a> <a href="https://cadufc-portfolio.vercel.app/">🚀</a>
+ <br />
+
+ [![Linkedin Badge](https://img.shields.io/badge/-Cadu-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/carloseduardo-fernandes/)](https://www.linkedin.com/in/carloseduardo-fernandes/) 
+[![Gmail Badge](https://img.shields.io/badge/-fernandes.cadu@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:fernandes.cadu@gmail.com)](mailto:fernandes.cadu@gmail.com)
+
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Cadu Fernandes 👋🏽 [Entre em contato!](https://www.linkedin.com/in/carloseduardo-fernandes/)
+
+---
+
+##  Versões do README
+
+[Português 🇧🇷](./README.md)  |  [Inglês 🇺🇸](./README-en.md)

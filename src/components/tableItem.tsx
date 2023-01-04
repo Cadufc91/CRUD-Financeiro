@@ -9,6 +9,7 @@ type Props = {
 }
 
 export const TableItem = ({ item }: Props) => {
+
     return(
         <tr>
                 <td>{formatDate(item.date)}</td>
