@@ -14,7 +14,7 @@
  
 </p>
 <h1 align="center">
-    <img alt="CRUD Financeiro" title="#CRUDFinanceiro" src="./src/thumb.png" />
+    <img alt="CRUD Financeiro" title="#CRUDFinanceiro" src="./src/assets/thumb.png" />
 </h1>
 
 <h4 align="center"> 
